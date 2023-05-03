@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang bán phụ kiện smartphone</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/giohang.js"></script>
+
+
+    <style>
+      .menuu:hover{
+        background-color: rgb(21, 13, 138);
+        border-radius: 5px;
+      }
+      .hinh:hover{
+        transition-duration: 0.2s;
+        border: solid rgb(246, 250, 250);
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="wrapper"">
+        <header>     
+            <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: rgb(16, 79, 188);"">
+                <a class="navbar-brand text-light" href="../html/baitaplon.html">
+                    <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <b><i>FUKYNLAND</i></b>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active menuu">
+                      <a class="nav-link text-light" href="../html/baitaplon.html">Trang chủ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item menuu">
+                      <a class="nav-link text-light" href="../html/gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown menuu">
+                      <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sản phẩm
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/bocapsac.html">Bộ cáp sạc</a>
+                        <a class="dropdown-item" href="../html/tainghe.html">Tai nghe</a>
+                        <a class="dropdown-item" href="#">Ốp lưng</a>
+                        <a class="dropdown-item" href="#">Loa</a>
+                        <a class="dropdown-item" href="#">Sạc dự phòng</a>
+                        <div class="dropdown-divider"></div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Phụ kiện chính hãng</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn- my-2 my-sm-0 btn-warning text-light" type="submit">Tìm kiếm</button>
+                  </form>
+                  <button class="btn btn-primary ml-5" id="btndangnhap">Đăng Nhập</button>
+                </div>
+              </nav>
+        </header>
+        <div class="content">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../img/hearder.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../img/header2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../img/header3.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        
+          </div>
+          <div class="container bg-light border rounded mt-4">
+              <h3 class="mt-sm-4 rounded text-center text-secondary"><b>BỘ CÁP SẠC</b></h3>
+              <div class="row">
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac1.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body text-center ">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac1.html" class="text-default mb-2" data-abc="true">Sạc Devia V3 kèm cáp Lightning</a>
+
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">160.000 ₫</h3>
+                    </div>
+                  </div>              
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac2.webp" class="card-img img-fluid anh" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac2.html" class="text-default mb-2" data-abc="true">Củ sạc Devia kèm cáp Micro USB V2</a>
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">190.000 ₫</h3>
+                
+                    </div>
+                  </div>              
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac3.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac3.html" class="text-default mb-2" data-abc="true">Củ sạc Feeltek PD 30W kèm cáp C-C</a>
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">300.000 ₫</h3>
+               
+                    </div>
+                  </div>              
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac4.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac4.html" class="text-default mb-2" data-abc="true">Củ sạc Baseus Super SI 1 cổng 20W kèm cáp USB-C to Lightning 1M</a>
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">300.000 ₫</h3>
+               
+                    </div>
+                  </div>              
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac5.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac5.html" class="text-default mb-2" data-abc="true">Củ sạc Samsung Type-C 45W kèm cáp C-C 5A 1.8M T4510</a>
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">710.000 ₫</h3>
+                    </div>
+                  </div>              
+                </div>
+
+                <div class="col-md-4 mt-3">
+                  <div class="card hinh">
+                    <div class="card-body">
+                      <div class="card-img-actions">                     
+                        <img src="../img/capsac6.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                      </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                      <div class="mb-2">
+                        <h6 class="font-weight-semibold mb-2">
+                          <a href="../html/capsac6.html" class="text-default mb-2" data-abc="true">Củ sạc Baseus Gan3 Pro 2C + U 65W kèm cáp Type-C to Type-C</a>
+                        </h6>
+                      </div>
+                      <h3 class="mb-0 font-weight-semibold mb-3 text-danger">890.000 ₫</h3>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+              <div class="row text-light">*</div>
+          </div>
+
+          <div class="container bg-light border rounded mt-4">
+            <h3 class="mt-sm-4 rounded text-center text-secondary"><b>TAI NGHE</b></h3>
+            <div class="row">
+
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/tainghe1.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/tainghe1.html" class="text-default mb-2" data-abc="true">Tai nghe nhét tai Samsung IA500</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">200.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+              
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/tainghe2.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/tainghe2.html" class="text-default mb-2" data-abc="true">Tai nghe nhét tai Vivan Q11s</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">200.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/tainghe3.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/tainghe3.html" class="text-default mb-2" data-abc="true">Tai nghe Sony MDR-EX155AP
+                        </a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">320.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/tainghe4.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/tainghe4.html" class="text-default mb-2" data-abc="true">Tai nghe không dây Nokia E3102</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">450.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/tainghe5.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/tainghe5.html" class="text-default mb-2" data-abc="true">Tai nghe không dây Soundpeats H2</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">1.160.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+
+            </div>
+            <div class="row text-light">*</div>
+          </div>
+
+          <div class="container bg-light border rounded mt-4">
+            <h3 class="mt-sm-4 rounded text-center text-secondary"><b>ỐP LƯNG</b></h3>
+            <div class="row">
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/oplung1.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/oplung1.html" class="text-default mb-2" data-abc="true">Ốp lưng Samsung Galaxy A53 OU Silicones</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">70.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+              
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/oplung2.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/oplung2.html" class="text-default mb-2" data-abc="true">Ốp lưng Samsung Galaxy A13 Elegant Seine Scene</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">176.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/oplung3.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/oplung3.html" class="text-default mb-2" data-abc="true">Bao da Samsung A32 LTE S-view Wallet bản 2023
+                        </a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">190.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/oplung4.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/oplung4.html" class="text-default mb-2" data-abc="true">Ốp lưng iPhone 14 Pro Max Spigen Hybrid Crystal Clear</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">450.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/oplung5.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/oplung5.html" class="text-default mb-2" data-abc="true">Ốp lưng iPhone 14 Pro Max Uag Chống Sốc Plyo With Magsafe</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">960.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+            </div>
+            <div class="row text-light">*</div>
+          </div>
+  
+  
+          <div class="container bg-light border rounded mt-4">
+            <h3 class="mt-sm-4 rounded text-center text-secondary"><b>SẠC DỰ PHÒNG</b></h3>
+            <div class="row">
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/sacduphong1.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/sacduphong1.html" class="text-default mb-2" data-abc="true">Sạc dự phòng Innostyle PowerGo Smart Ai 10000mAh</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">310.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+            
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/sacduphong2.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/sacduphong2.html" class="text-default mb-2" data-abc="true">Sạc dự phòng Energizer 10.000mAh UE10058BK</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">390.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/sacduphong3.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/sacduphong3.html" class="text-default mb-2" data-abc="true">Sạc dự phòng Energizer 10.000mAh QE10013PQ
+                        </a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">690.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+              <div class="col-md-4 mt-3">
+                <div class="card hinh">
+                  <div class="card-body">
+                    <div class="card-img-actions">                     
+                      <img src="../img/sacduphong4.webp" class="card-img img-fluid" width="96" height="350" alt="">                         
+                    </div>
+                  </div>
+                  <div class="card-body bg-light text-center">
+                    <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                        <a href="../html/sacduphong4.html" class="text-default mb-2" data-abc="true">Sạc dự phòng Energizer 20.000 mAh XP20004PD</a>
+                      </h6>
+                    </div>
+                    <h3 class="mb-0 font-weight-semibold mb-3 text-danger">1.390.000 ₫</h3>
+                  </div>
+                </div>              
+              </div>
+  
+            </div>
+            <div class="row text-light">*</div>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="dangki" id="dangki">
+            <h4 class="e color mt-5 text-center text-secondary ">DANH SÁCH ĐĂNG KÝ TÀI KHOẢN THÀNH CÔNG</h4>
+            <table class="table table-active table-striped table-hover table-bordered table-light bg-light" role="table" id="danhSach">
+                
+                <thead>
+                    <tr class="text-center bg-info text-light">
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Ngày sinh</th>
+                        <th>Giới tính</th>
+                        <th>Địa chỉ</th>
+                        <th>Số điện thoại</th>
+                        <th>Mật khẩu</th>
+                    </tr>
+                </thead>
+
+            </table>
+          </div>
+        </div>
+        
+        <footer  class="text-center text-lg-start bg-light text-muted border">
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="../img/logofooter.png" alt="" width="200px" height="auto">
+                        <h3 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3 text-info"><b>FUKYNLAND</b></i>
+                      </h3>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            SẢN PHẨM
+                        </h6>
+                        <p>
+                          Chuyên cung cấp phụ kiện điện thoại chính hãng 100%. Giao hàng toàn quốc. Đổi trả hàng trong vòng 6 ngày. Bảo hành lên tới 1 năm
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            LIÊN KẾT
+                        </h6>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Shoppee</a>
+                        </p>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Lazada</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            LIÊN HỆ
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>103 Phạm Hùng - Bà Rịa</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i> fukynland@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0999889899</p>
+                        <p><i class="fas fa-print me-3"></i> 0914567846</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script> - FUKYNLAND
+        </div>
+        </footer>
+        
+        <div class="modal fade" role="dialog" id="myModalDangNhap" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="margin-top: 10px;">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="text-left"> ĐĂNG NHẬP</h2>
+                      <button type="button" class="close" aria-label="Close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" class="form-horizontal" style="margin-left: 10px;">
+                          <label for="emailDN">Tài khoản</label>
+                          <input type="email" id="emailDN" class="form-control" placeholder="Nhập email của bạn..">
+                          <span class="text-danger" id="tbemailDN">*</span><br>
+
+                          <label for="password">Mật khẩu</label>
+                          <input type="password" id="MKDN" class="form-control" placeholder="Nhập mật khẩu của bạn">
+                          <span class="text-danger" id="tbMKDN">*</span>
+                          <div class="row">
+                              <div class="col-md-6" style="padding-top: .35rem">
+                                  <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                      <label class="form-check-label">
+                                          <input class="form-check-input" name="remember" type="checkbox">
+                                          <span style="padding-bottom: 15px">Remember me</span>
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <button type="button" class="btn btn-info btn-block" id="btndangnhapp" style="color: rgb(255, 255, 255); text-decoration: none;">Đăng nhập</button>
+                      </form>
+                  </div>
+  
+                  <div class="modal-footer justify-content-center">
+                      <div class="dangky">Bạn chưa có tài khoản? <span style="cursor: pointer;" class="text-info" id="btndangky">Đăng ký</span></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="modal fade" role="dialog" id="myModal" aria-hidden="true">
+          <div class="modal-lg modal-dialog modal-dialog-centered" style="margin-top: 10px;">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="text-left">THÔNG TIN KHÁCH HÀNG</h2>
+                      <button type="button" class="close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                          <div class="row">
+                              <div class="col-md-6">
+                                <label for="Name">Họ và tên</label>
+                                  <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên" required="">
+                                  <span class="text-danger" id="tbName">*</span>
+                              </div>
+                              <div class="col-md-6" style="margin-bottom: 10px;">
+                                <label for="Em">Email</label>
+                                  <input type="email" id="Em" class="form-control" placeholder="Nhập email" required="">
+                                  <span class="text-danger" id="tbEM">*</span>
+                              </div>
+                          </div>
+  
+
+                          <div class="row">
+                              <div class="col-md-6">
+                                <label for="NS" class="control-label">Ngày sinh</label>
+                                  <input type="date" id="NS" class="form-control">
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="SDT"> Số điện thoại</label>
+                                  <input type="text" id="SDT" class="form-control" placeholder="Nhập số điện thoại">
+                                  <span class="text-danger" id="errorSDT"></span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="MK" class="control-label col-md-6">Mật khẩu</label>
+                              <div class="col-md-12">
+                                  <input type="password"- id="MK" class="form-control" placeholder="Nhập mật khẩu">
+                                  <span class="text-danger" id="tbMK">*</span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="NLMK" class="control-label col-md-6">Nhập lại mật khẩu</label>
+                              <div class="col-md-12">
+                                  <input type="password" id="NLMK" class="form-control" placeholder="Nhập lại mật khẩu">
+                                  <span class="text-danger" id="tbNLMK">*</span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="GT" class="control-label col-md-3 mt-sm-2">Giới tính</label>
+                              <div class="form-check-inline">
+                                  <label class="form-check-label" for="radnam">
+                                      <input type="radio" class="form-check-input" id="radnam" name="gioitinh">Nam
+                                  </label>
+                              </div>
+                              <div class="form-check-inline">
+                                  <label class="form-check-label" for="radnu">
+                                      <input type="radio" class="form-check-input" id="radnu" name="gioitinh">Nữ
+                                  </label>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="DC" class="control-label col-md-3">Địa chỉ</label>
+                              <div class="col-md-12">
+                                  <input type="text" id="DC" class="form-control" placeholder="Nhập địa chỉ">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color: white; background-color: rgb(73, 209, 73);width: 100%;">
+                          ĐĂNG KÝ
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modalgiohang" class="modal fade">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <button class="close" data-dismiss="modalgiohang">&times;</button>
+            </div>
+            <div class="modal-body">
+                  <table class="table table-stripe table-bordered">
+                    <tr>
+                      <th>Sản phẩm</th>
+                      <th>Giá</th>
+                      <th>Số lượng</th>
+                    </tr>
+                  </table>
+
+
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                    <span class="cart-total-price">0VNĐ</span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary order" >Thanh Toán</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
