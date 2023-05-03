@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang bán phụ kiện smartphone</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/javascript.js"></script>
+
+
+    <style>
+      .menuu:hover{
+        background-color: rgb(21, 13, 138);
+        border-radius: 5px;
+      }
+      .hinh:hover{
+        transition-duration: 0.2s;
+        border: solid rgb(246, 250, 250);
+      }
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("#btndatmua").click(function(){
+                $("#modaldatmua").modal()
+            })
+        })
+
+    </script>
+</head>
+<body>
+  <div class="wrapper">
+        <header>     
+            <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: rgb(16, 79, 188);"">
+                <a class="navbar-brand text-light" href="../html/baitaplon.html">
+                    <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <b><i>FUKYNLAND</i></b>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active menuu">
+                      <a class="nav-link text-light" href="../html/baitaplon.html">Trang chủ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item menuu">
+                      <a class="nav-link text-light" href="../html/gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown menuu">
+                      <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sản phẩm
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/bocapsac.html">Bộ cáp sạc</a>
+                        <a class="dropdown-item" href="../html/tainghe.html">Tai nghe</a>
+                        <a class="dropdown-item" href="../html/oplung.html">Ốp lưng</a>
+                        <a class="dropdown-item" href="../html/sacduphong.html">Sạc dự phòng</a>
+                        <div class="dropdown-divider"></div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Phụ kiện chính hãng</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn- my-2 my-sm-0 btn-warning text-light" type="submit">Tìm kiếm</button>
+                  </form>
+                  <button class="btn btn-primary ml-5" id="btndangnhap">Đăng Nhập</button>
+                </div>
+              </nav>
+        </header>
+        
+        <section class="mt-5 mb-4">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6">
+                        <img src="../img/capsac5.webp" alt="">
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-6">
+                        <h3 class="text-secondary"><b>Củ sạc Samsung Type-C 45W kèm cáp C-C 5A 1.8M T4510</b></h3>
+                        <ul class="mt-4 mb-4">
+                            <li>Chất liệu nhựa nhám, hạn chế bám dấu vân tay, mồ hôi</li>
+                            <li>Dây cáp Type-C đi kèm 1.8m tương thích nhiều thiết bị</li>
+                            <li>Sạc nhanh hơn với củ sạc có công suất lên đến 45W</li>
+                            <li>Công nghệ PD đảm bảo an toàn cao, hạn chế cháy nổ</li>
+                        </ul>
+                        <div class="text-danger ml-5"><h1>710.000₫</h1></div>
+                        <button class="ml-5 mt-4 btn rounded btn-warning" id="btndatmua"><h3>Đặt mua</h3></button>
+                    </div>
+                </div>
+                <h3>Thông số kỹ thuật</h3>
+                <div class="row">
+                    <div class="col-6">
+                        Kích thước:
+
+43.5 x 84.8 x 28 mm <br>
+Trọng lượng:
+
+115.4 g <br>
+Loại cáp sạc:
+
+Type-C to Type-C <br>
+Chiều dài dây: 
+
+1.8m <br>
+Cổng sạc ra:
+
+1 x Type-C <br>
+                    </div>
+                    <div class="col-6">
+                        Sạc tối đa:
+
+1 thiết bị <br>
+Công suất sạc:
+
+45W <br>
+Tính năng:
+
+Sạc nhanh, Power Delivery <br>
+Hãng sản xuất:
+
+Samsung Chính hãng
+                    </div>
+                </div>
+                </div>
+        </section>
+        
+        <footer  class="text-center text-lg-start bg-light text-muted border">
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="../img/logofooter.png" alt="" width="200px" height="auto">
+                        <h3 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3 text-info"><b>FUKYNLAND</b></i>
+                      </h3>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            SẢN PHẨM
+                        </h6>
+                        <p>
+                          Chuyên cung cấp phụ kiện điện thoại chính hãng 100%. Giao hàng toàn quốc. Đổi trả hàng trong vòng 6 ngày. Bảo hành lên tới 1 năm
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            LIÊN KẾT
+                        </h6>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Shoppee</a>
+                        </p>
+                        <p>
+                            <a href="#" class="inf-usefull text-reset">Lazada</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            LIÊN HỆ
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>103 Phạm Hùng - Bà Rịa</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i> fukynland@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0999889899</p>
+                        <p><i class="fas fa-print me-3"></i> 0914567846</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script> - FUKYNLAND
+        </div>
+        </footer>
+        
+        <div class="modal fade" role="dialog" id="myModalDangNhap" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" style="margin-top: 10px;">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="text-left"> ĐĂNG NHẬP</h2>
+                      <button type="button" class="close" aria-label="Close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" class="form-horizontal" style="margin-left: 10px;">
+                          <label for="emailDN">Tài khoản</label>
+                          <input type="email" id="emailDN" class="form-control" placeholder="Nhập email của bạn..">
+                          <span class="text-danger" id="tbemailDN">*</span><br>
+
+                          <label for="password">Mật khẩu</label>
+                          <input type="password" id="MKDN" class="form-control" placeholder="Nhập mật khẩu của bạn">
+                          <span class="text-danger" id="tbMKDN">*</span>
+                          <div class="row">
+                              <div class="col-md-6" style="padding-top: .35rem">
+                                  <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                      <label class="form-check-label">
+                                          <input class="form-check-input" name="remember" type="checkbox">
+                                          <span style="padding-bottom: 15px">Remember me</span>
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <button type="button" class="btn btn-info btn-block" id="btndangnhapp" style="color: rgb(255, 255, 255); text-decoration: none;">Đăng nhập</button>
+                      </form>
+                  </div>
+  
+                  <div class="modal-footer justify-content-center">
+                      <div class="dangky">Bạn chưa có tài khoản? <span style="cursor: pointer;" class="text-info" id="btndangky">Đăng ký</span></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="modal fade" role="dialog" id="myModal" aria-hidden="true">
+          <div class="modal-lg modal-dialog modal-dialog-centered" style="margin-top: 10px;">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="text-left">THÔNG TIN KHÁCH HÀNG</h2>
+                      <button type="button" class="close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                          <div class="row">
+                              <div class="col-md-6">
+                                <label for="Name">Họ và tên</label>
+                                  <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên" required="">
+                                  <span class="text-danger" id="tbName">*</span>
+                              </div>
+                              <div class="col-md-6" style="margin-bottom: 10px;">
+                                <label for="Em">Email</label>
+                                  <input type="email" id="Em" class="form-control" placeholder="Nhập email" value="Nhập email" required="">
+                                  <span class="text-danger" id="tbEM">*</span>
+                              </div>
+                          </div>
+  
+
+                          <div class="row">
+                              <div class="col-md-6">
+                                <label for="NS" class="control-label">Ngày sinh</label>
+                                  <input type="date" id="NS" class="form-control">
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="SDT"> Số điện thoại</label>
+                                  <input type="text" id="SDT" class="form-control" placeholder="Nhập số điện thoại">
+                                  <span class="text-danger" id="errorSDT"></span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="MK" class="control-label col-md-6">Mật khẩu</label>
+                              <div class="col-md-12">
+                                  <input type="password"- id="MK" class="form-control" placeholder="Nhập mật khẩu">
+                                  <span class="text-danger" id="tbMK">*</span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="NLMK" class="control-label col-md-6">Nhập lại mật khẩu</label>
+                              <div class="col-md-12">
+                                  <input type="password" id="NLMK" class="form-control" placeholder="Nhập lại mật khẩu">
+                                  <span class="text-danger" id="tbNLMK">*</span>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="GT" class="control-label col-md-3 mt-sm-2">Giới tính</label>
+                              <div class="form-check-inline">
+                                  <label class="form-check-label" for="radnam">
+                                      <input type="radio" class="form-check-input" id="radnam" name="gioitinh">Nam
+                                  </label>
+                              </div>
+                              <div class="form-check-inline">
+                                  <label class="form-check-label" for="radnu">
+                                      <input type="radio" class="form-check-input" id="radnu" name="gioitinh">Nữ
+                                  </label>
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <label for="DC" class="control-label col-md-3">Địa chỉ</label>
+                              <div class="col-md-12">
+                                  <input type="text" id="DC" class="form-control" placeholder="Nhập địa chỉ">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color: white; background-color: rgb(73, 209, 73);width: 100%;">
+                          ĐĂNG KÝ
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- modal dat mua -->
+
+      <div class="modal" id="modaldatmua">
+        <div class="container" style="width: 50%;">
+            <div class="dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>PHIẾU ĐẶT HÀNG</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Tên sản phẩm: </b>Củ sạc Samsung Type-C 45W kèm cáp C-C 5A 1.8M T4510</p>
+                        <p><b>Đơn giá:</b> 710.000 vnđ</p>
+                        <p><b>Số lượng:</b> <input type="number" min="1" max="5" id="chonsoluong" value="1"></p>
+                        <p><b>Hình thức thanh toán:</b> <input type="radio" name="" id="" value="true">Ship code</p>
+                        <p><b>Địa chỉ:</b> <input type="text" name="" id="" placeholder="địa chỉ mặc định"></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class=" btn btn-info" data-dismiss="modal" id="btnthanhtoan">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+  </div>
+
+
+</body>
+</html>
