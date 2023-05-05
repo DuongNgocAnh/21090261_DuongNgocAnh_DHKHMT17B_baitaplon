@@ -9,16 +9,16 @@ $(document).ready(function () {
     //Kiểm tra đăng kí
     function kiemTraTen() {
         let hoten = $("#Name").val()
-        let regexHoten = /^[A-ZÂÁĐ][a-zA-Zàáâãéèêìíòóọôõùúăĩũơ]+((\s[A-ZÂÁĐ][a-zA-Zàáâãéèêìíòóôọõùúăđĩũơ]+))*$/
+        let regexHoten = /^[A-ZÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶÓÒỎÕỌƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÔỐỔỖỘĐ][a-zA-Záàảãạâấầẩẫậăắằẳẵặóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựéèẻẽẹêếềểễệíìỉĩịđ]+((\s[A-ZÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶÓÒỎÕỌƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÔỐỔỖỘĐ][a-zA-Záàảãạâấầẩẫậăắằẳẵặóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựéèẻẽẹêếềểễệíìỉĩịđ]+))*$/
         if (hoten.trim() == "") {
             $("#tbName").html("Bắt buộc nhập");
             return false;
         }
         if (!regexHoten.test(hoten)) {
-            $("#tbName").html("Mỗi kí tự đầu viết hoa, không viết số");
+            $("#tbName").html("Kí tự đầu viết hoa không có số");
             return false;
         }
-        $("#tbName").html("*");
+        $("#tbName").html(" ");
         return true;
     }
     $("#Name").blur(kiemTraTen);
@@ -27,14 +27,14 @@ $(document).ready(function () {
         let mail = $("#Em").val()
         var regexmail = /^([a-zA-Z0-9_])+\@(([a-zA-Z])+\.)com$/;
         if (mail == "") {
-            $("#tbEm").html("*Bắt buộc nhập");
+            $("#tbEm").html("*Bắt buộc");
             return false;
         }
         if (!regexmail.test(mail)) {
-            $("#tbEm").html("Ví dụ xuanan123@gmail.com");
+            $("#tbEm").html("Ví dụ abc@gmail.com");
             return false;
         }
-        $("#tbEm").html("*");
+        $("#tbEm").html(" ");
         return true;
     }
     $("#Em").blur(KTMail);
@@ -44,7 +44,7 @@ $(document).ready(function () {
         let regexSdt = /^0[345789]\d{8}/;
 
         if (sodt.trim() != '' && !regexSdt.test(sodt)) {
-            $('#errorSDT').html('Số điện thoại gồm 10 số và bắt đầu bằng đầu số 03, 04, 05, 07, 08, 09')
+            $('#errorSDT').html('Số điện thoại gồm 10 số')
             return false
         }
 
@@ -57,14 +57,14 @@ $(document).ready(function () {
     function kiemTraMK() {
         let mauKT = /[a-zA-Z0-9]{6,}/;
         if ($("#MK").val() == "") {
-            $("#tbMK").html("Bắt buộc nhập");
+            $("#tbMK").html("Bắt buộc");
             return false;
         }
         if (!mauKT.test($("#MK").val())) {
-            $("#tbMK").html("Nhập ít nhất 6 kí tự, không kí tự đặc biệt");
+            $("#tbMK").html("Nhập ít nhất 6 kí tự không bao gồm kí tự đặc biệt");
             return false;
         }
-        $("#tbMK").html("*");
+        $("#tbMK").html(" ");
         return true;
     }
     $("#MK").blur(kiemTraMK);
@@ -72,15 +72,15 @@ $(document).ready(function () {
     function kiemTraNLMK() {
 
         if ($("#NLMK").val() == "") {
-            $("#tbNLMK").html("Bắt buộc nhập");
+            $("#tbNLMK").html("Bắt buộc");
             return false;
         }
         if ($("#NLMK").val() != $("#MK").val()) {
 
-            $("#tbNLMK").html("Mật khẩu không khớp, nhập lại");
+            $("#tbNLMK").html("Mật khẩu không khớp");
             return false;
         }
-        $("#tbNLMK").html("*");
+        $("#tbNLMK").html(" ");
         return true;
     }
     $("#NLMK").blur(kiemTraNLMK);
@@ -118,11 +118,11 @@ $(document).ready(function () {
         let mailDN = $("#emailDN").val()
         let regexmailDN = /[a-z0-9]+(@gmail.com)$/;
         if (mailDN == "") {
-            $("#tbemailDN").html("*Bắt buộc nhập");
+            $("#tbemailDN").html("*Bắt buộc");
             return false;
         }
         if (!regexmailDN.test(mailDN)) {
-            $("#tbemailDN").html("Ví dụ xuanan123@gmail.com");
+            $("#tbemailDN").html("Ví dụ abc@gmail.com");
             return false;
         }
         $("#tbemailDN").html("*");
@@ -133,7 +133,7 @@ $(document).ready(function () {
     function kiemTraMKDN(){
         let mauKT=/[a-zA-Z0-9]{6,}/;
         if($("#MKDN").val()==""){
-            $("#tbMKDN").html("*Bắt buộc nhập");
+            $("#tbMKDN").html("*Bắt buộc");
             return false;
         }
         if(!mauKT.test($("#MKDN").val())){
@@ -150,7 +150,7 @@ $(document).ready(function () {
             $("#myModalDangNhap").modal("hide")
         }
         else{
-            alert("Wrong")
+            alert("Email hoặc mật khẩu sai")
         }
     });
 });

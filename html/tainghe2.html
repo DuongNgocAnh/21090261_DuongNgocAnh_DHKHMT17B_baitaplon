@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/javascript.js"></script>
+    <script src="../js/sourescript.js"></script>
 
 
     <style>
@@ -201,123 +201,132 @@ Vivan
         </footer>
         
         <div class="modal fade" role="dialog" id="myModalDangNhap" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" style="margin-top: 10px;">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h2 class="text-left"> ĐĂNG NHẬP</h2>
-                      <button type="button" class="close" aria-label="Close" data-dismiss="modal" style="color: red; outline: none;">×</button>
-                  </div>
-                  <div class="modal-body">
-                      <form role="form" class="form-horizontal" style="margin-left: 10px;">
-                          <label for="emailDN">Tài khoản</label>
-                          <input type="email" id="emailDN" class="form-control" placeholder="Nhập email của bạn..">
-                          <span class="text-danger" id="tbemailDN">*</span><br>
-
-                          <label for="password">Mật khẩu</label>
-                          <input type="password" id="MKDN" class="form-control" placeholder="Nhập mật khẩu của bạn">
-                          <span class="text-danger" id="tbMKDN">*</span>
-                          <div class="row">
-                              <div class="col-md-6" style="padding-top: .35rem">
-                                  <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-                                      <label class="form-check-label">
-                                          <input class="form-check-input" name="remember" type="checkbox">
-                                          <span style="padding-bottom: 15px">Remember me</span>
-                                      </label>
-                                  </div>
-                              </div>
-                          </div>
-                          <button type="button" class="btn btn-info btn-block" id="btndangnhapp" style="color: rgb(255, 255, 255); text-decoration: none;">Đăng nhập</button>
-                      </form>
-                  </div>
+            <div class="modal-dialog modal-dialog-centered" style="margin-top: 10px;">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(237, 182, 0);">
+                      <img src="../img/logodangnhap.png" alt="" width="50px" class="mr-2">
+                        <h2 class="text-left" style="color: rgb(25, 56, 113);"> ĐĂNG NHẬP</h2>
+                        <button type="button" class="close" aria-label="Close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                    </div>
+                    <div class="modal-body" >
+                        <form role="form" class="form-horizontal" style="margin-left: 10px;">
+                            <label for="emailDN"><b><i>Email</i></b></label>
+                            <input type="email" id="emailDN" class="form-control" placeholder="Nhập email của bạn.." style="background-color: rgb(253, 251, 244);">
+                            <span class="text-danger" id="tbemailDN">*</span><br>
   
-                  <div class="modal-footer justify-content-center">
-                      <div class="dangky">Bạn chưa có tài khoản? <span style="cursor: pointer;" class="text-info" id="btndangky">Đăng ký</span></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  
-      <div class="modal fade" role="dialog" id="myModal" aria-hidden="true">
-          <div class="modal-lg modal-dialog modal-dialog-centered" style="margin-top: 10px;">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h2 class="text-left">THÔNG TIN KHÁCH HÀNG</h2>
-                      <button type="button" class="close" data-dismiss="modal" style="color: red; outline: none;">×</button>
-                  </div>
-                  <div class="modal-body">
-                      <form role="form" class="form-horizontal" style="margin-top: 10px;">
-                          <div class="row">
+                            <label for="password"><b><i>Mật khẩu</i></b></label>
+                            <input type="password" id="MKDN" class="form-control" placeholder="Nhập mật khẩu của bạn" style="background-color: rgb(253, 251, 244);">
+                            <span class="text-danger" id="tbMKDN">*</span>
+                            <div class="row">
+                                <div class="col-md-6" style="padding-top: .35rem">
+                                    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" name="remember" type="checkbox">
+                                            <span style="padding-bottom: 15px">Remember me</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-info" id="btndangnhapp" style="color: rgb(255, 255, 255); text-decoration: none ;margin-left: 170px;">Đăng nhập</button>
+                        </form>
+                    </div>
+    
+                    <div class="modal-footer justify-content-center" style="background-color: rgba(237, 240, 241, 0.982);;">
+                        <div class="dangky" >Bạn chưa có tài khoản? <span style="cursor: pointer;" class="text-info" id="btndangky">Đăng ký</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="modal fade" role="dialog" id="myModal" aria-hidden="true">
+            <div class="modal-lg modal-dialog modal-dialog-centered" style="margin-top: 10px; ">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkblue;">
+                        <img src="../img/logodangky.png" alt="" width="50px" class="mr-2">
+                        <h2 class="text-center" style="color: aliceblue; ">THÔNG TIN ĐĂNG KÝ</h2>
+                        <button type="button" class="close" data-dismiss="modal" style="color: red; outline: none;">×</button>
+                    </div>
+                    <div class="modal-body pre-scrollable">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <label for="Name"><b><i>Họ và tên</i></b></label>
+                                    <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên" required="" style="background-color: rgb(233, 251, 255);">
+                                    <span class="text-danger" id="tbName">*</span>
+                                </div>
+                                <div class="col-md-6" style="margin-bottom: 10px;">
+                                  <label for="Em"><b><i>Email</i></b></label>
+                                    <input type="email" id="Em" class="form-control" placeholder="Nhập email" required="" style="background-color: rgb(233, 251, 255);">
+                                    <span class="text-danger" id="tbEm">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                
                               <div class="col-md-6">
-                                <label for="Name">Họ và tên</label>
-                                  <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên" required="">
-                                  <span class="text-danger" id="tbName">*</span>
-                              </div>
-                              <div class="col-md-6" style="margin-bottom: 10px;">
-                                <label for="Em">Email</label>
-                                  <input type="email" id="Em" class="form-control" placeholder="Nhập email" value="Nhập email" required="">
-                                  <span class="text-danger" id="tbEM">*</span>
-                              </div>
-                          </div>
-  
-
-                          <div class="row">
-                              <div class="col-md-6">
-                                <label for="NS" class="control-label">Ngày sinh</label>
-                                  <input type="date" id="NS" class="form-control">
-                              </div>
-                              <div class="col-md-6">
-                                  <label for="SDT"> Số điện thoại</label>
-                                  <input type="text" id="SDT" class="form-control" placeholder="Nhập số điện thoại">
-                                  <span class="text-danger" id="errorSDT"></span>
-                              </div>
-                          </div>
-  
-                          <div class="row">
-                              <label for="MK" class="control-label col-md-6">Mật khẩu</label>
-                              <div class="col-md-12">
-                                  <input type="password"- id="MK" class="form-control" placeholder="Nhập mật khẩu">
+                                <label for="MK" class="control-label"><b><i>Mật khẩu</i></b></label>
+                                  <input type="password"- id="MK" class="form-control" placeholder="Nhập mật khẩu" style="background-color: rgb(233, 251, 255);">
                                   <span class="text-danger" id="tbMK">*</span>
                               </div>
-                          </div>
-  
-                          <div class="row">
-                              <label for="NLMK" class="control-label col-md-6">Nhập lại mật khẩu</label>
-                              <div class="col-md-12">
-                                  <input type="password" id="NLMK" class="form-control" placeholder="Nhập lại mật khẩu">
+                              
+                              <div class="col-md-6">
+                                <label for="NLMK" class="control-label col-md-6"><b><i>Nhập lại mật khẩu</i></b></label>
+                                  <input type="password" id="NLMK" class="form-control" placeholder="Nhập lại mật khẩu" style="background-color: rgb(233, 251, 255);">
                                   <span class="text-danger" id="tbNLMK">*</span>
                               </div>
                           </div>
   
-                          <div class="row">
-                              <label for="GT" class="control-label col-md-3 mt-sm-2">Giới tính</label>
-                              <div class="form-check-inline">
-                                  <label class="form-check-label" for="radnam">
-                                      <input type="radio" class="form-check-input" id="radnam" name="gioitinh">Nam
-                                  </label>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label for="DC" class="control-label col-md-6"><b><i>Địa chỉ</i></b></label>
+                                    <input type="text" id="DC" class="form-control" placeholder="Nhập địa chỉ" style="background-color: rgb(233, 251, 255);">
+                                    <span class="text-danger" id="tbDC">*</span>
                               </div>
-                              <div class="form-check-inline">
-                                  <label class="form-check-label" for="radnu">
-                                      <input type="radio" class="form-check-input" id="radnu" name="gioitinh">Nữ
-                                  </label>
-                              </div>
-                          </div>
+                              <div class="col-md-3">
+                                <label for="SDT"> <b><i>Số điện thoại</i></b></label>
+                                <input type="text" id="SDT" class="form-control" placeholder="Nhập số điện thoại" style="background-color: rgb(233, 251, 255);">
+                                <span class="text-danger" id="errorSDT">*</span>
+                            </div>
+                                <div class="col-md-3">
+                                  <label for="NS" class="control-label"><b><i>Ngày sinh</i></b></label>
+                                    <input type="date" id="NS" class="form-control" style="background-color: rgba(237, 240, 241, 0.982);">
+                                </div>
   
-                          <div class="row">
-                              <label for="DC" class="control-label col-md-3">Địa chỉ</label>
-                              <div class="col-md-12">
-                                  <input type="text" id="DC" class="form-control" placeholder="Nhập địa chỉ">
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer">
-                      <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color: white; background-color: rgb(73, 209, 73);width: 100%;">
+  
+                            </div>
+    
+                            
+    
+  
+  
+                            <div class="row">
+                                <label for="GT" class="control-label col-md-3 mt-sm-2"><b><i>Giới tính</i></b></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" for="radnam">
+                                        <input type="radio" class="form-check-input" id="radnam" name="gioitinh">Nam
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" for="radnu">
+                                        <input type="radio" class="form-check-input" id="radnu" name="gioitinh">Nữ
+                                    </label>
+                                </div>
+                            </div>
+    
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="background-color: rgb(242, 238, 238);">
+  
+                        <button class="btn btn-success" id="Save" type="button">
                           ĐĂNG KÝ
                       </button>
-                  </div>
-              </div>
-          </div>
-      </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       
       <!-- modal dat mua -->
 
